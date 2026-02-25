@@ -1,9 +1,4 @@
-Template for the Read the Docs tutorial
+Setap Parking App Documentation
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
-
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+See the main repository `here <https://github.com/SETaP-2025-2026-Team-2a/Parking-App>`.
