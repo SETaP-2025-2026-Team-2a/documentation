@@ -1,10 +1,6 @@
 Usage
 =====
 
-.. _installation:
+Use the parking app like you would any other parking app.
 
-Installation
-------------
-
-IDK how to install it.
-
+TODO: detailed usage instructions for end users.

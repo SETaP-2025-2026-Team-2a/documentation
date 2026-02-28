@@ -4,4 +4,5 @@ API
 .. autosummary::
    :toctree: generated
 
-There's no API yet.
+**TODO** A list of API routes corresponding to different parts of the app.
+

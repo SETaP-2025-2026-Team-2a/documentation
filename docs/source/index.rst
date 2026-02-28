@@ -1,5 +1,5 @@
 Welcome to Parking App's documentation!
-===================================
+=======================================
 
 **Parking App** is the best parking app you have ever used.
 
@@ -17,3 +17,4 @@ Contents
 
    usage
    api
+   installation

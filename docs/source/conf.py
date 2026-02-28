@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Parking App'
+copyright = '2026'
+author = 'Setap-2526 Team 2A'
 
 release = '0.1'
 version = '0.1.0'
