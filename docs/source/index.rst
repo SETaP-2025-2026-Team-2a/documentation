@@ -4,7 +4,7 @@ Welcome to Parking App's documentation!
 **Parking App** is the best parking app you have ever used.
 
 Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+how to :doc:`installation` the project.
 
 .. note::
 
