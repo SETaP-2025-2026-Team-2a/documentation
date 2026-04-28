@@ -6,6 +6,8 @@ API
 
 API Routes for different parts of the app.
 
+Responses are in JSON format but are portrayed in this documentation as the Python dictionaries used to generate the JSON contained within the source code.
+
 Authentication
 --------------
 
@@ -98,3 +100,37 @@ Response (on failure): ::
       "result": False,
       "error": "An error occurred during sign up",
    }, 500
+
+Car parks (listing and creating)
+--------------------------------
+
+Methods for listing and creating new car parks.
+
+Route: `/car-park`
+
+GET
+^^^
+
+Returns a list of all car parks.
+
+Parameters: None.
+
+Response: ::
+   
+   {
+      "data": CarParkSchema().dump(car_park_data)
+   }, 200
+
+POST
+^^^^
+
+Parameters:
+- ``name``, string, required
+- ``spaces``, int, required
+- ``location``, float, required
+
+Response: ::
+   
+   {
+      "data": CarParkSchema().dump(response.data[0])
+   }, 201
