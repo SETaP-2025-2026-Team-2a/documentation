@@ -280,3 +280,47 @@ Response (on success): None.
 Response (on failure): ::
    
    {"error": e}
+
+Users
+-----
+
+Getting and modifying users.
+
+Route: ``/users/<string:email>``, the email parameter is required for both methods.
+
+GET
+^^^
+
+Gets the data for a users profile.
+
+Response (on success): ::
+   
+   {
+      "process": "Get User",
+      "user_id": user.get("user_id"),
+      "name": user.get("first_name") or user.get("name"),
+      "lastname": user.get("last_name") or user.get("lastname"),
+      "email": user.get("email"),
+      "vehicles": vehicles,
+      "payment_methods": payment_methods,
+      "result": True,
+   }
+
+Response (on failure): ::
+   
+   {
+      "process": "Get User",
+      "user_id": None,
+      "name": None,
+      "lastname": None,
+      "email": email, 
+      "vehicles": [],
+      "payment_methods": [],
+      "error": "User not found",
+      "result": False
+   }
+
+PUT
+^^^
+
+TODO: Not consistent with other routes??
