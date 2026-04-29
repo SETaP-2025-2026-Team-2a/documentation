@@ -210,3 +210,73 @@ Response (on failure): ::
 
    {"error": "Failed to fetch car parks"}
 
+Parking sessions
+----------------
+
+Route: ``/parking-session``
+
+GET
+^^^
+
+Get the parking sessions for a user.
+
+Parameters:
+-  ``user_id``, string, required
+
+Response (on success): ::
+   
+   {
+      "data": [
+         ParkingSessionSchema().dump(session)
+         for session in response.data
+      ]
+   }
+
+Where ``ParkingSessionSchema`` is: ::
+   
+   {
+      "user_id": str,
+      "carpark_id": int,
+      "user_rating": int,
+      
+      "start_time": int,
+      "end_time": int,
+      "expiry_time": int,
+   }
+
+Response (on failure): ::
+   {"error": e}
+
+POST
+^^^^
+
+Create a new car parking session.
+
+Parameters:
+- ``user_id``, int, required
+- ``vehicle_id``, int, required
+- ``carpark_id``, int, required
+- ``duration``, int, required
+
+Response (on success): None.
+
+Response (on failure): ::
+   
+   {"error": e}
+
+PUT
+^^^
+
+Modify a car parking session, either extending or cancelling it.
+
+Parameters:
+- ``user_id``, int, required
+- ``session_id``, int, required
+- ``action``, string, required, ``extend, cancel``
+- ``action_data``, string
+
+Response (on success): None.
+
+Response (on failure): ::
+   
+   {"error": e}
