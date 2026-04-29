@@ -184,3 +184,29 @@ Response (on success): None.
 Response (on failure): ::
 
    {"error": e}, 500
+
+Searching
+---------
+
+Searching only supports GET requests.
+
+Route: ``/search``
+
+GET
+^^^
+
+Parameters:
+- ``query``, string, required, e.g. the name of a car park or a particular location
+- ``minDistance``, float, required
+- ``maxDistance``, float, required
+- ``longitude``, float, required
+- ``latitude``, float, required
+
+Response (on success): ::
+   
+   CarParkSchema(many=True).dump(filtered_results)
+
+Response (on failure): ::
+
+   {"error": "Failed to fetch car parks"}
+
