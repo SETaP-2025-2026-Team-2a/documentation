@@ -134,3 +134,53 @@ Response: ::
    {
       "data": CarParkSchema().dump(response.data[0])
    }, 201
+
+
+Reviews
+-------
+
+Creating and deleting reviews.
+
+Route: ``/review``
+
+GET
+^^^
+
+Parameters:
+- ``carpark_id``, int, required
+
+Response (on success): ::
+
+   {"data": [ReviewSchema().dump(rev) for rev in response.data]}, 200
+
+Response (on failure): ::
+   
+   {"error": "Car park does not exist"}
+
+
+
+POST
+^^^^
+
+Parameters:
+- ``carpark_id``, int, required
+- ``review``, int, required, 0-5
+- ``title``, string, required
+
+Response (on success): None
+
+Response (on failure): ::
+   
+   {"error": e}, 500
+
+DELETE
+^^^^^^
+
+Parameters:
+- ``review_id``, int, required
+
+Response (on success): None.
+
+Response (on failure): ::
+
+   {"error": e}, 500
