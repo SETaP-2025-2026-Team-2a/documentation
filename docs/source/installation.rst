@@ -48,3 +48,7 @@ Frontend
       flutter run
 
 
+User installation
+-----------------
+
+Users can install the app by downloading a pre-packaged APK.
