@@ -23,7 +23,7 @@ Sign up
 -------
 
 1. Tap **Sign up**.
-2. Enter your first name, last name, email, and password.
+2. Enter your first name, last name (Optional), email, and password.
 3. Submit the form to create your account.
 
 Log in
