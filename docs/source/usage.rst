@@ -33,6 +33,13 @@ Log in
 2. Tap **Log in**.
 3. After successful login, you will be taken to the main app view.
 
+.. figure:: images/login-screen.png
+   :alt: Login screen with email and password fields
+   :width: 400
+   :align: center
+
+   The login screen where users enter their credentials
+
 Find a car park
 ---------------
 
