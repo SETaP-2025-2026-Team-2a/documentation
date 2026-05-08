@@ -14,6 +14,81 @@ Quick start
 6. Extend, cancel, or let the session finish.
 7. Leave a review and check your session history.
 
+Screenshots
+-----------
+
+The screenshots below show the main screens users move through during the app flow.
+
+Login
+-----
+
+.. figure:: images/login-screen.png
+   :alt: Login screen with email and password fields
+   :width: 400
+   :align: center
+
+   The login screen where users enter their credentials
+
+Sign up
+-------
+
+.. figure:: images/sign-up-screen.png
+   :alt: Sign up form with first name, last name, email, and password fields
+   :width: 400
+   :align: center
+
+   The sign up screen used to create a new account
+
+Settings
+--------
+
+.. figure:: images/settings-page.png
+   :alt: Settings screen showing notification and app preference toggles
+   :width: 400
+   :align: center
+
+   The settings screen where users adjust app preferences
+
+Search
+------
+
+.. figure:: images/search-screen.png
+   :alt: Search screen with a location search bar, map, and car park filters
+   :width: 400
+   :align: center
+
+   The search screen used to find nearby car parks
+
+History
+-------
+
+.. figure:: images/reviews.png
+   :alt: History screen listing recent reviews and session activity
+   :width: 400
+   :align: center
+
+   The history and reviews screen
+
+Home
+----
+
+.. figure:: images/home-screen.png
+   :alt: Home screen showing the active session area and nearby car parks
+   :width: 400
+   :align: center
+
+   The home screen where users start and manage a parking session
+
+Profile
+-------
+
+.. figure:: images/profile-page.png
+   :alt: Profile page showing account details and user information
+   :width: 400
+   :align: center
+
+   The profile page for viewing account details
+
 Create an account or log in
 ---------------------------
 
@@ -32,13 +107,6 @@ Log in
 1. Enter your email and password.
 2. Tap **Log in**.
 3. After successful login, you will be taken to the main app view.
-
-.. figure:: images/login-screen.png
-   :alt: Login screen with email and password fields
-   :width: 400
-   :align: center
-
-   The login screen where users enter their credentials
 
 Find a car park
 ---------------
@@ -93,8 +161,3 @@ Troubleshooting
 - If no car parks appear, check your internet connection and search filters.
 - If your position is wrong, make sure location services are enabled on your device.
 - If login fails, verify your email and password, then try again.
-
-Planned improvements
---------------------
-
-add screenshots.
