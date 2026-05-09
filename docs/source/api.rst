@@ -322,5 +322,31 @@ Response (on failure): ::
 
 PUT
 ^^^
+Updates the data for a users profile, with the addition of updating vehicle information
 
-TODO: Not consistent with other routes??
+Response (on success): ::
+   
+   {
+      "process": "Get User",
+      "user_id": user.get("user_id"),
+      "name": user.get("first_name") or user.get("name"),
+      "lastname": user.get("last_name") or user.get("lastname"),
+      "email": user.get("email"),
+      "payment_methods": payment_methods,
+      "vehicles": vehicles,
+      "result": True,
+   }
+
+Response (on failure): ::
+   
+   {
+      "process": "Get User",
+      "user_id": None,
+      "name": None,
+      "lastname": None,
+      "email": email, 
+      "vehicles": [],
+      "payment_methods": [],
+      "error": "User not found",
+      "result": False
+   }
