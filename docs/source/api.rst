@@ -327,26 +327,17 @@ Updates the data for a users profile, with the addition of updating vehicle info
 Response (on success): ::
    
    {
-      "process": "Get User",
-      "user_id": user.get("user_id"),
-      "name": user.get("first_name") or user.get("name"),
-      "lastname": user.get("last_name") or user.get("lastname"),
-      "email": user.get("email"),
-      "payment_methods": payment_methods,
-      "vehicles": vehicles,
-      "result": True,
+   "process": "Update User",
+   "user_id": user_id,
+   "name": name,
+   "lastname": lastname,
+   "email": updated_email or email,
+   "result": True,
    }
 
 Response (on failure): ::
    
    {
-      "process": "Get User",
-      "user_id": None,
-      "name": None,
-      "lastname": None,
-      "email": email, 
-      "vehicles": [],
-      "payment_methods": [],
-      "error": "User not found",
+      "process": "Update User",
       "result": False
    }
